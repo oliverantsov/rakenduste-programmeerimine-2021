@@ -2,10 +2,14 @@ import './App.css';
 import {Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
+import AddItem from './pages/AddItem';
+import AddCategory from './pages/AddCategory';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Route path='/' exact>
         <Home />
       </Route>
@@ -13,7 +17,10 @@ function App() {
         <Cart />
       </Route>
       <Route path='/add-item'>
-        <div>Add-item, mis pole veel valmis</div>
+        <AddItem />
+      </Route>
+      <Route path='/add-category'>
+        <AddCategory />
       </Route>
     </div>
   );

@@ -1,12 +1,47 @@
-import Item from "../components/Item";
+import ItemList from "../components/ItemList";
+import CategoryList from "../components/CategoryList";
+import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function Home() {
+    const [isLoading, setIsLoading] = useState(true);
+    const [loadedItems, setLoadedItems] = useState([]);
+    const [loadedCategories, setLoadedCategories] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:8080/items').then(res => {
+            return res.json();
+        }).then(data => {
+            console.log(data);
+            setIsLoading(false);
+            setLoadedItems(data);
+        });
+        fetch('http://localhost:8080/categories').then(res => {
+            return res.json();
+        }).then(data => {
+            console.log(data);
+            setIsLoading(false);
+            setLoadedCategories(data);
+        });
+    },[])
+    
+    
+
+    if(isLoading) {
+        return (<div>Loading...</div>);
+    }
+
     return (
         <div>
-            Tere
-                <Item name="Item1" price="10" category="candy"/>
-                <Item name="Item2" price="500" category="phone"/>
-                <Item name="Item3" price="22500" category="car"/>
+            <Link to="add-item">
+                <button>Lisa uus ese</button>
+            </Link>
+            <ItemList items={loadedItems}/>
+            <br />
+            <Link to="add-category">
+                <button>Lisa uus kategooria</button>
+            </Link>
+            <CategoryList categories={loadedCategories}/>
         </div>
     )
 }
