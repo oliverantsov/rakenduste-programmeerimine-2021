@@ -1,6 +1,8 @@
+import './Cart.css';
+
 function Cart() {
     return (
-        <div>
+        <div className="cartMenu">
             Ostukorv
         </div>
     )

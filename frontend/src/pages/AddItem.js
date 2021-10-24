@@ -1,4 +1,5 @@
 import AddItemForm from "../components/AddItemForm";
+import './AddItem.css';
 
 function AddItem() {
     function itemSubmitHandler(item) {
