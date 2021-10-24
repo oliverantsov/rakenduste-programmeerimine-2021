@@ -2,7 +2,7 @@
 
 ## Screenshots of webpage
 
-![Frontpage](/screenshots/frontpage.png)
-![Cart View](/screenshots/cart.png)
-![Adding Categories](/screenshots/categoryform.png)
-![Adding Items](/screenshots/itemform.png)
+![Frontpage](https://github.com/oliverantsov/rakenduste-programmeerimine-2021/blob/main/frontend/screenshots/frontpage.png)
+![Cart View](https://github.com/oliverantsov/rakenduste-programmeerimine-2021/blob/main/frontend/screenshots/cart.png)
+![Adding Categories](https://github.com/oliverantsov/rakenduste-programmeerimine-2021/blob/main/frontend/screenshots/categoryform.png)
+![Adding Items](https://github.com/oliverantsov/rakenduste-programmeerimine-2021/blob/main/frontend/screenshots/itemform.png)
