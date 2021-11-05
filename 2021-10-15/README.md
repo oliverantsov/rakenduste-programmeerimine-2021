@@ -1,31 +1,14 @@
-## Lokaalne setup
+# Homework 4
 
-- Navigeeri kausta `local-dev`
-- Installi vajalikud dependency'd
-```
-docker-compose run --rm --no-deps backend-node install
-docker-compose run --rm --no-deps frontend-react install
-```
-- Kui vaja kustuta vanad samanimelised konteinerid
-```
-docker rm frontend-react
-```
-- Seejärel käivita kõik teenused (headless)
-```
-docker-compose up -d
-```
-- Rakendused on kättesaadavad
+# Screenshots of webpage
 
-- Selleks, et peatada kõik teenused
-```
-docker-compose stop
-```
-
-Frontend react - http://localhost:3000/
-
-Backend node - http://localhost:8081/
-
-## Troubleshoot
-
-- Probleemi ilmnemisel võid vaadata, kas probleem Dockeris ja reinstallida see
-- Kustutada node_modules kaust mõlemast folderist ja installida need ülemiste käskudega uuesti
+## Frontpage
+![Frontpage](https://github.com/oliverantsov/rakenduste-programmeerimine-2021/blob/main/2021-10-15/screenshots/Frontpage.png)
+## Registration view
+![Registration Page](https://github.com/oliverantsov/rakenduste-programmeerimine-2021/blob/main/2021-10-15/screenshots/Registrationpage.png)
+## Login view
+![Loginpage](https://github.com/oliverantsov/rakenduste-programmeerimine-2021/blob/main/2021-10-15/screenshots/Loginpage.png)
+## Posts view
+![Posts Page](https://github.com/oliverantsov/rakenduste-programmeerimine-2021/blob/main/2021-10-15/screenshots/Postspage.png)
+## Posts Update view
+![Post Update Page](https://github.com/oliverantsov/rakenduste-programmeerimine-2021/blob/main/2021-10-15/screenshots/Updatepage.png)
