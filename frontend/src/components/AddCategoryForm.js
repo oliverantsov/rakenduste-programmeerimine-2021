@@ -24,13 +24,13 @@ function AddCategoryForm(props) {
             <label>Kategooria nimi</label><br />
             <input type="text" placeholder="Nimi" required ref={nameInputRef} /><br />
             <label>Kategooria tüüp</label><br />
-            <select required ref={categoryTypeInputRef}> 
+            <select required ref={categoryTypeInputRef} className="selectDropdown"> 
                 <option>PREMIUM</option>
                 <option>DELUXE</option>
                 <option>BASIC</option>
             </select><br />
             <br />
-            <button>Sisesta uus kategooria</button>
+            <button className="greenButton">Sisesta uus kategooria</button>
         </form>
     );
 }

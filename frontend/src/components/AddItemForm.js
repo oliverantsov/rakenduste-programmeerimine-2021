@@ -30,7 +30,7 @@ function AddItemForm(props) {
             <input type="number" placeholder="Hind" required ref={priceInputRef} /><br />
             <label>Eseme kategooria</label><br />
             <input type="text" placeholder="Kategooria" required ref={categoryInputRef} /><br />
-            <button>Sisesta uus ese</button>
+            <button className="greenButton">Sisesta uus ese</button>
         </form>
     );
 }

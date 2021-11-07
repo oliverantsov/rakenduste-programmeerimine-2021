@@ -5,3 +5,45 @@ form {
 label {
     font-weight: bold;
 }
+
+.greenButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.selectDropdown {
+    border: 2px solid #347536;
+    border-radius: 4px;
+    transition: width 0.4s ease-in-out;
+    width: 130px;
+}
+
+input[type=text] {
+    border: 2px solid #347536;
+    border-radius: 4px;
+    transition: width 0.4s ease-in-out;
+    width: 130px;
+}
+
+input[type=number] {
+    border: 2px solid #347536;
+    border-radius: 4px;
+    transition: width 0.4s ease-in-out;
+    width: 130px;
+}
+
+input[type=text]:focus {
+    width: 250px;
+}
+
+input[type=number]:focus {
+    width: 250px;
+}

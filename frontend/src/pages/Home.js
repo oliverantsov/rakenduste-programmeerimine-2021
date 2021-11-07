@@ -1,6 +1,4 @@
 import ItemList from "../components/ItemList";
-import CategoryList from "../components/CategoryList";
-import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Home() {
@@ -33,15 +31,7 @@ function Home() {
 
     return (
         <div>
-            <Link to="add-item">
-                <button>Lisa uus ese</button>
-            </Link>
-            <ItemList items={loadedItems}/>
-            <br />
-            <Link to="add-category">
-                <button>Lisa uus kategooria</button>
-            </Link>
-            <CategoryList categories={loadedCategories}/>
+            <ItemList isAddToCart={true} items={loadedItems}/>
         </div>
     )
 }
